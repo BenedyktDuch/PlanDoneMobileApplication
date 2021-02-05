@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="taskpage"
+        xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:input="http://xamarin.com/schemas/2014/forms/design" xmlns:ViewModels="clr-namespace:PlanDone.ViewModels"
+             x:Class="PlanDone.Views.TasksView">
+
+    <ContentPage.BindingContext>
+        <ViewModels:TasksViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Accesses"
+                 IconImageSource="user.png"
+                 Order="Primary"
+                 Priority="1"
+                 IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding AccessBtnClicked}"/>
+            <ToolbarItem Text="Add Task"
+                 IconImageSource="plus.png"
+                 Order="Primary"
+                 Priority="1" 
+                 IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding AddTaskBtnClicked}"/>
+            <ToolbarItem 
+                 Text="Delete List"
+                 Order="Secondary"
+                 Priority="2" 
+                 IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding DeleteListBtnClicked}"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="MyTaskView" ItemsSource="{Binding Items}" IsPullToRefreshEnabled="True" IsRefreshing="{Binding IsRefreshing}" RefreshCommand="{Binding RefreshTaskClicked}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                        <Label Text="{Binding Taskname}" Padding ="5,0,50,0" Margin="0,0,0,0" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" TextColor="Black" IsEnabled="False"/>
+                        <Label Text="{Binding Done}" WidthRequest="60" Margin="10,0,10,0" FontSize="Small" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="Gray" IsEnabled="False">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label" Binding="{Binding Done}" Value="false">
+                                    <Setter Property="Text" Value="Undone"></Setter>
+                                </DataTrigger>
+                                <DataTrigger TargetType="Label" Binding="{Binding Done}" Value="true">
+                                    <Setter Property="Text" Value="Done"></Setter>
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
+                        <Button Image="arrows.png"  Margin ="10,0,10,0" WidthRequest="40" IsEnabled="{Binding  AreBtnsEn}" Command="{Binding BindingContext.ChangeStateClicked, Source={x:Reference taskpage}}" 
+                                CommandParameter="{Binding TaskID}"  />
+                        <Button Image="trash.png"  Margin ="10,0,10,0" WidthRequest="40"  IsEnabled="{Binding  AreBtnsEn}" Command="{Binding BindingContext.DeleteTaskClicked, Source={x:Reference taskpage}}" CommandParameter="{Binding TaskID}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

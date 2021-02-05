@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="PlanDone.Views.LoginView"
+            NavigationPage.HasNavigationBar="false"
+            xmlns:ViewModels="clr-namespace:PlanDone.ViewModels">
+
+    <ContentPage.BindingContext>
+        <ViewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="Logo">
+                <Image x:Name="LoginIcon" Source="puzzle2.png" Margin="0,80,0,0" WidthRequest="100" />
+                <Label Text="PLAN DONE" HorizontalOptions="Center" FontSize="Large"/>
+            </StackLayout>
+            
+            <StackLayout x:Name="LoginEntry" Padding="40,100,40,0">
+                <Entry x:Name="Entry_Email" Text="{Binding Entry_Email}" Placeholder="Email" TextColor="Black" />
+                <Entry x:Name="Entry_Password" Text="{Binding Entry_Password}" Placeholder="Password" IsPassword="True" TextColor="Black" />
+                <Button x:Name="Btn_Login" Text="Log in" Command="{Binding LoginBtnClicked}" IsEnabled="{Binding  AreBtnsEn}"  TextColor="White"/>
+            </StackLayout>
+            <StackLayout x:Name="Register" Padding="80,50,80,20">
+                <Button x:Name="Btn_GoToRegister" Text="Create an account" Command="{Binding GoToRegistereBtnClicked}" IsEnabled="{Binding AreBtnsEn}"  TextColor="White" />
+            </StackLayout>
+            <StackLayout x:Name="Signature" Padding="20,10,20,10">
+                <Label Text="2020 AGH Benedykt Duchnowski. Created for educational purposes only." FontSize="Small"/>
+            </StackLayout>
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
+    
+    

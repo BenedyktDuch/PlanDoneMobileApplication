@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ViewModels="clr-namespace:PlanDone.ViewModels"
+             x:Class="PlanDone.Views.RegisterView">
+
+    <ContentPage.BindingContext>
+        <ViewModels:RegisterViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="LoginEntry" Padding="40,100,40,0">
+            <Entry x:Name="Entry_Email" Text="{Binding Entry_Email}" Placeholder="Email" TextColor="Black" />
+            <Entry x:Name="Entry_Password" Text="{Binding Entry_Password}" Placeholder="Password" IsPassword="True" TextColor="Black" />
+            <Entry x:Name="Entry_ConfirmedPassword" Text="{Binding Entry_ConfirmedPassword}"  Placeholder="Confirm Password" IsPassword="True" TextColor="Black" />
+            <Button x:Name="Btn_Register" Text="Sign up"
+                    Command="{Binding SignUpBtnClicked}"  
+                    IsEnabled="{Binding  AreBtnsEn}" 
+                    BackgroundColor="Black" 
+                    TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

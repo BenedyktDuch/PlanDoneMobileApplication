@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ViewModels="clr-namespace:PlanDone.ViewModels"
+             x:Class="PlanDone.Views.MenuListsView"
+             NavigationPage.HasBackButton="False">
+
+    <ContentPage.BindingContext>
+        <ViewModels:MenuListsViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add List"
+                 IconImageSource="plus.png"
+                 Order="Primary"
+                 Priority="1" 
+                  IsEnabled="{Binding  AreBtnsEn}"
+                Command="{Binding AddListBtnClicked}"/>
+        <ToolbarItem 
+                 IconImageSource="puzzle2.png"
+                 Order="Primary"
+                 Priority="0"  />
+        <ToolbarItem 
+                 Text="Change password"
+                 Order="Secondary"
+                 Priority="2" 
+             IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding ChangePasswordBtnClicked}"/>
+        <ToolbarItem 
+                 Text="Credits"
+                 Order="Secondary"
+                 Priority="2"  
+             IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding CredtisBtnClicked}"/>
+        <ToolbarItem 
+                 Text="Logout"
+                 Order="Secondary"
+                 Priority="2"  
+             IsEnabled="{Binding  AreBtnsEn}"
+                Command="{Binding LogoutBtnClicked}"/>
+    </ContentPage.ToolbarItems>
+
+
+    <ListView x:Name="MyListView"
+              ItemsSource="{Binding Items}" 
+              IsEnabled="{Binding  AreBtnsEn}" 
+              SelectedItem="{Binding SelectedItem, Mode=TwoWay}" 
+              IsPullToRefreshEnabled="True"
+              RefreshCommand="{Binding RefreshCommandClicked}"
+              IsRefreshing="{Binding IsRefreshing}" >
+        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell Text="{Binding Listname}"  
+                           Detail="Click to show details" 
+                           TextColor="Black"
+                           ImageSource="todolist.png"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    
+  </ListView>
+    
+</ContentPage>

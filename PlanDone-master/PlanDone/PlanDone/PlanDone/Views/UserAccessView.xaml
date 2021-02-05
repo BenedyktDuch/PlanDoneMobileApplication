@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="accesspage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:input="http://xamarin.com/schemas/2014/forms/design" xmlns:ViewModels="clr-namespace:PlanDone.ViewModels"
+             x:Class="PlanDone.Views.UserAccessView">
+    
+    <ContentPage.BindingContext>
+        <ViewModels:UserAccessViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Accesses"
+                 IconImageSource="plus.png"
+                 Order="Primary"
+                 Priority="1" 
+                 IsEnabled="{Binding  AreBtnsEn}"
+                 Command="{Binding AddUserAccessClicked}"/>
+      </ContentPage.ToolbarItems>
+
+    <ListView x:Name="MyUserAccessView" ItemsSource="{Binding Items}"  IsEnabled="{Binding  AreBtnsEn}" IsPullToRefreshEnabled="True" IsRefreshing="{Binding IsRefreshing}" RefreshCommand="{Binding RefreshClicked}"  HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+                            <Label Text="{Binding UserEmail}" Padding ="5,0,5,0" Margin="0,0,0,0" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" TextColor="Black" IsEnabled="False"/>
+                            <Label Text="{Binding AccessLevel}" WidthRequest="60" Margin="10,0,10,0" FontSize="Small" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Gray" IsEnabled="False">
+                                <Label.Triggers>
+                                    <DataTrigger TargetType="Label" Binding="{Binding AccessLevel}" Value="1">
+                                        <Setter Property="Text" Value="Viewer"></Setter>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding AccessLevel}" Value="2">
+                                        <Setter Property="Text" Value="Editor"></Setter>
+                                    </DataTrigger>
+                                    <DataTrigger TargetType="Label" Binding="{Binding AccessLevel}" Value="3">
+                                        <Setter Property="Text" Value="Admin"></Setter>
+                                    </DataTrigger>
+                                </Label.Triggers>
+                            </Label>
+                        <Button Image="access.png"  Margin ="10,0,10,0"  IsEnabled="{Binding  AreBtnsEn}" WidthRequest="40" Command="{Binding BindingContext.ChangeAccessLevelClicked, Source={x:Reference accesspage}}" CommandParameter="{Binding .}" />
+                        <Button Image="trash.png"  Margin ="10,0,10,0"  IsEnabled="{Binding  AreBtnsEn}" WidthRequest="40" Command="{Binding BindingContext.DeleteAccessClicked, Source={x:Reference accesspage}}" CommandParameter="{Binding .}"/>
+                    </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+       
+
+</ContentPage>
