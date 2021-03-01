@@ -8,7 +8,7 @@ The thesis presents process of mobile application development for Android and iO
 
 The system architecture created in project:
 
-<img src="Presentation/SystemArchitecture.JPG" width="783" height="403">
+<img src="Presentation/SystemArchitecture.JPG" width="626" height="322">
 
 Each elemenent was designed and implemented. The source code is available in this repository. 
 
