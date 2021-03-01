@@ -10,6 +10,8 @@ The system architecture created in project:
 
 ![Image of Architecture](Presentation/SystemArchitecture.JPG)
 
+<img src="Presentation/SystemArchitecture.JPG" width="324" height="324">
+
 Each elemenent was designed and implemented. The source code is available in this repository. 
 
 iOS:
