@@ -13,7 +13,7 @@ The system architecture created in project:
 Each elemenent was designed and implemented. The source code is available in this repository. 
 
 ![Image of iOS](https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/iOS.JPG)
-
+<img width=“964” alt=“Image of iOS” src=“https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/iOS.JPG”>
 ![Image of Menu](https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/MenuListView%20%E2%80%94%20kopia.JPG)
 
 
