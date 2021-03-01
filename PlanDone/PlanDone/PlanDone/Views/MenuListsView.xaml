@@ -16,12 +16,12 @@
                   IsEnabled="{Binding  AreBtnsEn}"
                 Command="{Binding AddListBtnClicked}"/>
         <ToolbarItem 
-                 IconImageSource="puzzle2.png"
+                 IconImageSource="puzzletitle.png"
                  Order="Primary"
                  Priority="0"  />
         <ToolbarItem 
                  Text="Change password"
-                 Order="Secondary"
+                 Order="Secondary"           
                  Priority="2" 
              IsEnabled="{Binding  AreBtnsEn}"
                  Command="{Binding ChangePasswordBtnClicked}"/>
@@ -39,6 +39,9 @@
                 Command="{Binding LogoutBtnClicked}"/>
     </ContentPage.ToolbarItems>
 
+    <NavigationPage.TitleView>
+        <Label Text="PlanDone" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontAttributes="Bold"/>    
+    </NavigationPage.TitleView>
 
     <ListView x:Name="MyListView"
               ItemsSource="{Binding Items}" 

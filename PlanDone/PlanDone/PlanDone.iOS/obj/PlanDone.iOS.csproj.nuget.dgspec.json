@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj": {}
+    "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj": {
+    "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj",
+        "projectUniqueName": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj",
         "projectName": "PlanDone.iOS",
-        "projectPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj",
-        "packagesPath": "C:\\Users\\basia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\obj\\",
+        "projectPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj",
+        "packagesPath": "/Users/benedyktd/.nuget/packages/",
+        "outputPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\basia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/benedyktd/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj": {
-                "projectPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj"
+              "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj": {
+                "projectPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj"
               }
             }
           }
@@ -65,28 +59,22 @@
         }
       }
     },
-    "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj": {
+    "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj",
+        "projectUniqueName": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj",
         "projectName": "PlanDone",
-        "projectPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj",
-        "packagesPath": "C:\\Users\\basia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\obj\\",
+        "projectPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj",
+        "packagesPath": "/Users/benedyktd/.nuget/packages/",
+        "outputPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\basia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/benedyktd/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,7 +126,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

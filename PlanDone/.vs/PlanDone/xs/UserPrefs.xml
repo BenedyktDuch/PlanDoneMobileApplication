@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{D7FFC6DC-F28C-4C20-9E25-B408C01A61BF}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlanDone/PlanDone/Data/RestApiService.cs">
+    <Files>
+      <File FileName="PlanDone/PlanDone/Views/MenuListsView.xaml" Line="44" Column="32" />
+      <File FileName="PlanDone/PlanDone/Data/Constants.cs" />
+      <File FileName="PlanDone/PlanDone/Data/RestApiService.cs" Line="205" Column="1" />
+      <File FileName="PlanDone/PlanDone/Views/LoginView.xaml" />
+      <File FileName="PlanDone/PlanDone.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="PlanDone/PlanDone.iOS/Info.plist" />
+      <File FileName="PlanDone/PlanDone.iOS/AppDelegate.cs" />
+      <File FileName="PlanDone/PlanDone/Views/TasksView.xaml" />
+      <File FileName="PlanDone/PlanDone/Views/UserAccessView.xaml" />
+      <File FileName="PlanDone/PlanDone/Views/MenuListsView.xaml.cs" />
+      <File FileName="PlanDone/PlanDone/ViewModels/MenuListsViewModel.cs" />
+      <File FileName="PlanDone/PlanDone/Views/LoginView.xaml.cs" />
+      <File FileName="PlanDone/PlanDone/ViewModels/TasksViewModel.cs" />
+      <File FileName="PlanDone/PlanDone/Views/RegisterView.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PlanDone" expanded="True">
+            <Node name="PlanDone" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="RestApiService.cs" selected="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="LoginView.xaml" expanded="True" />
+                <Node name="MenuListsView.xaml" expanded="True" />
+                <Node name="RegisterView.xaml" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="PlanDone.iOS" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PlanDone.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5E749DA6-9966-4DF0-ACD1-B05A8F648B4E" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.PlanDone.Android PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

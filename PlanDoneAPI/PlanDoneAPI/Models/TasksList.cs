@@ -27,8 +27,8 @@ namespace PlanDoneAPI.Models
         { 
         }
 
-        public TasksList(string TaskID, string ListID, string Taskname, DateTime CreateDate, string AuthorID,
-            bool Done, int Priority=3)
+        public TasksList(string TaskID, string ListID, string Taskname,
+            DateTime CreateDate, string AuthorID,bool Done, int Priority=3)
         {
             this.TaskID = TaskID;
             this.ListID = ListID;

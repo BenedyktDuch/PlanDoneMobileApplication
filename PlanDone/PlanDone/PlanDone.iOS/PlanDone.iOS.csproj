@@ -113,6 +113,33 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\puzzle2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\puzzle2.imageset\iconv2.png" />
+    <ImageAsset Include="Assets.xcassets\access.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\plus.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrows.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\access.imageset\access-2.png" />
+    <ImageAsset Include="Assets.xcassets\access.imageset\access.png" />
+    <ImageAsset Include="Assets.xcassets\arrows.imageset\arrows-2.png" />
+    <ImageAsset Include="Assets.xcassets\arrows.imageset\arrows.png" />
+    <ImageAsset Include="Assets.xcassets\puzzle2.imageset\puzzle2.png" />
+    <ImageAsset Include="Assets.xcassets\puzzle2.imageset\puzzle2-2.png" />
+    <ImageAsset Include="Assets.xcassets\trash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\trash.imageset\trash-1.png" />
+    <ImageAsset Include="Assets.xcassets\trash.imageset\trash-2.png" />
+    <ImageAsset Include="Assets.xcassets\iconv2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\iconv2.imageset\iconv2.png" />
+    <ImageAsset Include="Assets.xcassets\iconv2.imageset\iconv2-1.png" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\user.png" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\user-1.png" />
+    <ImageAsset Include="Assets.xcassets\puzzletitle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\plus.imageset\plus.png" />
+    <ImageAsset Include="Assets.xcassets\plus.imageset\plus-1.png" />
+    <ImageAsset Include="Assets.xcassets\puzzletitle.imageset\puzzletitle-1.png" />
+    <ImageAsset Include="Assets.xcassets\puzzletitle.imageset\puzzletitle-2.png" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\user-3.png" />
+    <ImageAsset Include="Assets.xcassets\user.imageset\user-4.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -129,8 +156,21 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\PlanDone\PlanDone.csproj">
-      <Project>{A316A114-6F4D-49AD-82F7-4722F01A52F6}</Project>
+      <Project>{71DCC6E3-26FB-49DE-845F-C302862CEA34}</Project>
       <Name>PlanDone</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\puzzle2.imageset\" />
+    <Folder Include="Assets.xcassets\access.imageset\" />
+    <Folder Include="Assets.xcassets\plus.imageset\" />
+    <Folder Include="Assets.xcassets\arrows.imageset\" />
+    <Folder Include="Assets.xcassets\trash.imageset\" />
+    <Folder Include="Assets.xcassets\iconv2.imageset\" />
+    <Folder Include="Assets.xcassets\user.imageset\" />
+    <Folder Include="Assets.xcassets\todolist.imageset\" />
+    <Folder Include="Assets.xcassets\puzzle2menu.imageset\" />
+    <Folder Include="Assets.xcassets\puzzlemenu.imageset\" />
+    <Folder Include="Assets.xcassets\puzzletitle.imageset\" />
   </ItemGroup>
 </Project>

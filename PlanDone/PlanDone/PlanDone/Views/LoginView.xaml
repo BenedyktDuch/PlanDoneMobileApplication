@@ -10,6 +10,7 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <StackLayout x:Name="Logo">
                 <Image x:Name="LoginIcon" Source="puzzle2.png" Margin="0,80,0,0" WidthRequest="100" />
@@ -24,11 +25,13 @@
             <StackLayout x:Name="Register" Padding="80,50,80,20">
                 <Button x:Name="Btn_GoToRegister" Text="Create an account" Command="{Binding GoToRegistereBtnClicked}" IsEnabled="{Binding AreBtnsEn}"  TextColor="White" />
             </StackLayout>
-            <StackLayout x:Name="Signature" Padding="20,10,20,10">
+            <StackLayout x:Name="Signature" VerticalOptions="EndAndExpand" Padding="20,10,20,10">
                 <Label Text="2020 AGH Benedykt Duchnowski. Created for educational purposes only." FontSize="Small"/>
             </StackLayout>
        </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
+        
 </ContentPage>
     
     

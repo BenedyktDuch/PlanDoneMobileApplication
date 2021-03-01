@@ -173,12 +173,15 @@ namespace PlanDone.Controllers
         {
             string url = "https://bscthesis.azurewebsites.net/api/Task/Add";
             client.DefaultRequestHeaders.Clear();
-            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Constants.userToken.AccessToken);
+            client.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer",
+                Constants.userToken.AccessToken);
             string contentType = "application/json";
             var content = JsonConvert.SerializeObject(newTask);
             try
             {
-                var result = await client.PostAsync(url, new StringContent(content, Encoding.UTF8, contentType));
+                var result = await client.PostAsync(url, new StringContent(content,
+                    Encoding.UTF8, contentType));
                 return result;
 
             }

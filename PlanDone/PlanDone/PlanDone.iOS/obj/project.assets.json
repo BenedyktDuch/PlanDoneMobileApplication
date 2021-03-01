@@ -1157,39 +1157,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\basia\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/benedyktd/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj",
+      "projectUniqueName": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj",
       "projectName": "PlanDone.iOS",
-      "projectPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj",
-      "packagesPath": "C:\\Users\\basia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\obj\\",
+      "projectPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj",
+      "packagesPath": "/Users/benedyktd/.nuget/packages/",
+      "outputPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\basia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/benedyktd/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj": {
-              "projectPath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone\\PlanDone.csproj"
+            "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj": {
+              "projectPath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone/PlanDone.csproj"
             }
           }
         }

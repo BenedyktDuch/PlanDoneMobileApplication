@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "z2a+pdWhHgH8lriUVp3fEOBf1hDckd9FJ6PsRhYvJERCjkuHz65i4gExZGCipxMmXNCojGLtJJKY+grSPX7fmw==",
+  "dgSpecHash": "cNgK0vYitqSSG8YU1n2tlK0RXpHUKpB6qGNlmrj8JtLg8BjEAJy4rLKJ2Y89lenndpDDy82IfGpwJ1lzZgQtdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\basia\\Desktop\\PlanDone\\PlanDone-master\\PlanDone\\PlanDone\\PlanDone.iOS\\PlanDone.iOS.csproj",
+  "projectFilePath": "/Users/benedyktd/Documents/GitHub/PlanDoneMobileApplication/PlanDone/PlanDone/PlanDone.iOS/PlanDone.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\basia\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\basia\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\basia\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "/Users/benedyktd/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/benedyktd/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
+    "/Users/benedyktd/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/benedyktd/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

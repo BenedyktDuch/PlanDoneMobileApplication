@@ -87,7 +87,8 @@ namespace PlanDoneAPI.Controllers
             if (!ulas.ifAccessExists(userAccessToModify))
                 return StatusCode(HttpStatusCode.NotFound);
 
-            if (ulas.isAdmin(userAccessToModify.ListID, userEmail) && userEmail != userAccessToModify.UserEmail)
+            if (ulas.isAdmin(userAccessToModify.ListID, userEmail)
+                && userEmail != userAccessToModify.UserEmail)
             {
                 try
                 {

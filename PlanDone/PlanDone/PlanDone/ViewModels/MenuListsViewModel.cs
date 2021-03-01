@@ -66,9 +66,31 @@ namespace PlanDone.ViewModels
             this.CredtisBtnClicked = new Command(async () => await GoToCredits());
             this.ChangePasswordBtnClicked = new Command(async () => await ChangePassword());
             this.LogoutBtnClicked = new Command(async () => await Logout());
-            // this.ListBtnClicked = new Command(async () => await GoToList());
             Init();
         }
+
+        public ICommand AddListBtnClicked { get; protected set; }
+
+        private async System.Threading.Tasks.Task AddList()
+        {
+            AreBtnsEn = false;
+            string result = await Application.Current.MainPage.DisplayPromptAsync("New List",
+                "Insert new list name:");
+            if (String.IsNullOrEmpty(result))
+            {
+                AreBtnsEn = true;
+                return;
+            }
+
+            var addResult = await n_Restctrl.AddList(result);
+            if (addResult.StatusCode == System.Net.HttpStatusCode.Created)
+                await Refresh();
+            else
+                await Application.Current.MainPage.DisplayAlert("Error",
+                    "Something went wrong, check your connection", "Ok");
+            AreBtnsEn = true;
+        }
+
         async void Init()
         {
             Items = await n_Restctrl.GetLists();
@@ -82,21 +104,7 @@ namespace PlanDone.ViewModels
             IsRefreshing = false;
         }
        
-        public ICommand AddListBtnClicked { get; protected set; }
-
-        private async System.Threading.Tasks.Task AddList()
-        {
-            AreBtnsEn = false;
-            string result = await Application.Current.MainPage.DisplayPromptAsync("New List", "Insert new list name:");
-            if (String.IsNullOrEmpty(result))
-                return;
-            var addResult = await n_Restctrl.AddList( result);
-            if (addResult.StatusCode == System.Net.HttpStatusCode.Created)
-                await Refresh();
-            else
-               await Application.Current.MainPage.DisplayAlert("Error", "Something went wrong, check your connection", "Ok");
-            AreBtnsEn = true;
-        }
+      
         
         public ICommand CredtisBtnClicked { get; set; }
 
