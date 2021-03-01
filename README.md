@@ -8,16 +8,11 @@ The thesis presents process of mobile application development for Android and iO
 
 The system architecture created in project:
 
-![Image of Architecture](Presentation/SystemArchitecture.JPG)
-
-<img src="Presentation/SystemArchitecture.JPG" width="324" height="324">
+<img src="Presentation/SystemArchitecture.JPG" width="522" height="269">
 
 Each elemenent was designed and implemented. The source code is available in this repository. 
 
-iOS:
 ![Image of iOS](Presentation/iOS.JPG)
-
-Android:
-![Image of Menu](https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/MenuListView%20%E2%80%94%20kopia.JPG)
+<img src="Presentation/SystemArchitecture.JPG" width="402" height="403">
 
 
