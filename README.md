@@ -8,12 +8,14 @@ The thesis presents process of mobile application development for Android and iO
 
 The system architecture created in project:
 
-![Image of Architecture](https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/SystemArchitecture.JPG)
+![Image of Architecture](Presentation/SystemArchitecture.JPG)
 
 Each elemenent was designed and implemented. The source code is available in this repository. 
 
-![Image of iOS](Presentation/SystemArchitecture.JPG)
+iOS:
+![Image of iOS](Presentation/iOS.JPG)
 
+Android:
 ![Image of Menu](https://github.com/BenedyktDuch/PlanDone/blob/master/Presentation/MenuListView%20%E2%80%94%20kopia.JPG)
 
 
